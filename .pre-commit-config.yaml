@@ -1,0 +1,12 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1  # You can change to the latest version
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-merge-conflict
+      - id: debug-statements  # Checks for print and pdb.debug statements in the code
+  - repo: https://github.com/psf/black
+    rev: 23.1.0
+    hooks:
+      - id: black  # Code formatting with Black
